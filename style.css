@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  margin: 5vh auto;
+}
+
+.header {
+  flex-basis: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title,
+.desc {
+  width: 40%;
+}
+
+.title h1 {
+  margin: 0;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.desc h2 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.desc p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.content {
+  margin-top: 5vh;
+  flex-basis: 4;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 45vh 45vh;
+  row-gap: 8vh;
+  justify-content: space-between;
+}
+
+.card {
+  width: 15vw;
+}
+
+.card img {
+  display: inline;
+  width: 80%;
+  height: 100%;
+}
+
+.card h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.card span {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  writing-mode: vertical-rl;
+}
+
+.card-1,
+.card-3,
+.card-4,
+.card-6 {
+  align-self: start;
+}
+
+.card-2,
+.card-5 {
+  align-self: baseline;
+  margin-top: 20%;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 90vw;
+  }
+
+  .title,
+  .desc {
+    width: 100%;
+    margin-top: 5vh;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .title h1 {
+    font-size: 2.8rem;
+  }
+
+  .desc h2 {
+    font-size: 1.5rem;
+  }
+
+  .desc p {
+    font-size: 1.3rem;
+  }
+
+  .content {
+    grid-template-columns: auto auto;
+    grid-template-rows: 50vh 50vh 50vh;
+    row-gap: 5vh;
+  }
+
+  .card {
+    width: 30vh;
+  }
+
+  .card img {
+    width: 87%;
+  }
+
+  .card span {
+    font-size: 1.1rem;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card-1,
+  .card-3,
+  .card-5 {
+    margin-top: 0;
+  }
+
+  .card-2,
+  .card-4,
+  .card-6 {
+    margin-top: 8vh;
+  }
+}
